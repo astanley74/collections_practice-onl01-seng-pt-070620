@@ -23,14 +23,18 @@ def reverse_array(array)
   array.reverse
 end
 
+#def kesha_maker(array)
+#  new_array = []
+#  array.each do |string|
+#    string_array = string.split ""
+#    string_array[2] = "$"
+#    new_array << string_array.join
+#  end
+#  new_array
+#end
+
 def kesha_maker(array)
-  new_array = []
-  array.each do |string|
-    string_array = string.split ""
-    string_array[2] = "$"
-    new_array << string_array.join
-  end
-  new_array
+  array.each { |item| item[2] = "$" }
 end
 
 def find_a(array)
